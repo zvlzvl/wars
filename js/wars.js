@@ -231,4 +231,33 @@ console.log(differenceInAges([82, 15, 6, 38, 35]));
     console.log(even_or_odd(1), "Odd")
     console.log(even_or_odd(6), "even")
  
-    console.log('-------------------------------');
+    console.log('---------lyginius sutrumpintai----------------------');
+
+    function getEvenNumbers(numbersArray) {
+    let newArray = [];
+  for (let i = 0; i < numbersArray.length; i++) {
+    if (numbersArray[i]%2===0){
+    newArray.push(numbersArray[i]);
+  }
+}
+  return newArray
+    }   
+console.log(getEvenNumbers([2,4,5,6]));
+
+
+
+function getEvenNumbers(numbersArray) {
+const ArrayFilter = numbersArray.filter(n => n%2===0)
+return ArrayFilter
+}
+
+
+console.log(getEvenNumbers([2,4,5,6]));
+
+console.log('-------------------------------');
+
+function fireFight(s){
+  return s.replace(/Fire/g, '~~')
+}
+
+console.log(fireFight("Mast Deck Engine Water Fire"));
