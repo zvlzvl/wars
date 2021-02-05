@@ -261,3 +261,45 @@ function fireFight(s){
 }
 
 console.log(fireFight("Mast Deck Engine Water Fire"));
+
+
+console.log('-------------------------------');
+
+function createArrayOfTiers(num) {
+  let arra = [num.toString()];
+  while (num >=10){
+    num = Math.floor(num/10)
+    arra.push(num.toString())
+  }
+
+ return arra.reverse();
+}
+console.log(createArrayOfTiers(2017));
+
+console.log('-------------------------------');
+
+function digital_root(n) {
+  let number = n.toString()
+  let suma = 0;
+  if (number.length === 1) {
+    return parseInt(number);
+  }
+  for (let i = 0; i < number.length; i++) { 
+      suma +=  parseInt(number[i]);
+  }
+  return digital_root(suma);
+}
+
+  console.log(digital_root(1191));
+
+  console.log('-------------------------------');
+
+  function digitalRoot(number) {
+   number = eval(number.toString().split('').join('+'));
+   if (number > 9){
+    return digitalRoot(number)
+   } 
+   return number;
+  }
+
+  console.log(digitalRoot(1191));
