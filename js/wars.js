@@ -303,3 +303,37 @@ function digital_root(n) {
   }
 
   console.log(digitalRoot(1191));
+
+  
+  console.log('-------------------------------');
+
+  let number = 2;
+
+  console.log(number.toString(2));
+
+  function evensAndOdds(num){
+    if (num%2 === 0) {
+      return num.toString(2)
+    } else
+    return num.toString(16);
+  }
+
+  console.log(evensAndOdds(13));
+
+  console.log('-------------------------------');
+
+  function testIt(a,b){
+    return eval(a.toString().split('').join('+')) * eval(b.toString().split('').join('+'))
+  }
+  console.log(testIt(12,34));
+
+  console.log('-------------------------------');
+
+  function solution(string) {
+    newStr = '';
+    for (let i = 0; i < string.length; i++) { 
+    } 
+     newStr += newStr.push(string[i])
+      
+  }
+  console.log(solution('camelCasing'));
