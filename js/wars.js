@@ -329,11 +329,42 @@ function digital_root(n) {
 
   console.log('-------------------------------');
 
-  function solution(string) {
-    newStr = '';
+  /*function solution(string) {
+    let newStr = '';
     for (let i = 0; i < string.length; i++) { 
     } 
      newStr += newStr.push(string[i])
       
   }
-  console.log(solution('camelCasing'));
+  console.log(solution('camelCasing'));*/
+
+
+  console.log('-------------------------------');
+
+  function getAverage(marks){
+    let sum = 0;
+    for (const mark of marks) {
+      sum += mark;
+    }
+    return Math.round(sum / marks.length)
+  }
+
+  console.log(getAverage([2,2,2,4])); 
+
+  console.log('-------------------------------');
+
+  function gordon(a){
+    a = a.toUpperCase();
+    a = a.replace(/[aA]/gi, '@');
+    a = a.replace(/[eEiIoOuU]/gi, '*');
+    a = a.split(' ');
+    aNew = [];
+    for (let i = 0; i < a.length; i++) {
+      aNew.push(a[i]+'!!!!');
+    }
+  
+    return aNew.join(' ')
+  }
+
+  console.log(gordon('What feck damn cake'));
+
