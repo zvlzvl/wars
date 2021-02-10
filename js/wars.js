@@ -368,3 +368,35 @@ function digital_root(n) {
 
   console.log(gordon('What feck damn cake'));
 
+  console.log('-------------------------------');
+  function warnTheSheep(queue) {
+    let ilgis = queue.length;
+    queue.reverse();
+    if (queue[0] === "wolf") {
+      return "Pls go away and stop eating my sheep";
+  }
+    for (var i = 0; i < ilgis; i++) {
+          if (queue[i] === "wolf") {
+  
+          return `Oi! Sheep number ${i}! You are about to be eaten by a wolf!`
+  
+        }
+      }
+  
+  }
+
+  console.log(warnTheSheep(['sheep','sheep','sheep','sheep','wolf','sheep','sheep',]));
+  
+  
+  console.log('-------------------------------');
+  function firstNonConsecutive (arr) {
+    for (let i = 0; i < arr.length-1; i++) {
+      if (arr[i]+1 !== arr[i+1]) {
+     return arr[i+1];
+   }
+   }
+   return null;
+   }
+
+   console.log(firstNonConsecutive([1,2,3,4,6,7,8,9]));
+
