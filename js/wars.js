@@ -400,3 +400,21 @@ function digital_root(n) {
 
    console.log(firstNonConsecutive([1,2,3,4,6,7,8,9]));
 
+   console.log('-------------------------------');
+
+   function race(v1, v2, g) {
+    if (v1 >= v2) {
+  return null
+} else {
+let meetPoint = g/(v2-v1)
+let meetH = Math.floor(meetPoint);
+let meetMin = Math.floor(60 * (meetPoint - meetH));
+let meetS = Math.floor(meetPoint*3600 - (meetH*3600+meetMin*60));
+  if (meetS === 60) {
+    return [meetH, meetMin+1, 0]
+  } else {
+    return [meetH, meetMin, meetS];
+}
+}
+}
+console.log(race(820, 850, 550));
