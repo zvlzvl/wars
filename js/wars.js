@@ -418,3 +418,26 @@ let meetS = Math.floor(meetPoint*3600 - (meetH*3600+meetMin*60));
 }
 }
 console.log(race(820, 850, 550));
+
+function elevatorDistance(array) {
+  let sum = 0;
+  for (let i = 0; i < array.length-1; i++) {
+    sum += Math.abs(array[i]-array[i+1]);
+  }
+  return sum
+}
+
+console.log(elevatorDistance([6,1,6,1]));
+
+function sequence(x) {
+  let arr = [];
+  for (let i = 0; i < x; i++) {
+    arr.push(i+1);
+  }
+  return arr.sort();
+}
+console.log(sequence(16));
+
+
+
+
