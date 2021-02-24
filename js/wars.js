@@ -438,6 +438,12 @@ function sequence(x) {
 }
 console.log(sequence(16));
 
+function chuckPushUps(string) {
+  string = string.replace(/[^0-9,]/g, ',');
+  return string;
+}
+
+console.log(chuckPushUps('1 "Chuck" 10 "Stop that!" 11 "Your vest looks stupid" 100 101 110'));
 
 
 
