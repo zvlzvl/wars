@@ -595,3 +595,10 @@ console.log(solution(125));
       return s
     }
     console.log(solve('abracadabra', 1));
+
+    function whatNote(string, fret) {
+      const e = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
+         return e[(e.indexOf(string.toUpperCase())+fret)%12]
+    }
+
+    console.log(whatNote("B", 4));
