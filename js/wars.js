@@ -1,3 +1,4 @@
+
 function createPhoneNumber(numbers){
     return '('+ numbers[0] + numbers[1] + numbers[2] + ') ' + numbers[3] + numbers[4] + numbers[5] + '-' + numbers[6] + numbers[7] + numbers[8] + numbers[9] 
     }
@@ -243,7 +244,7 @@ console.log(differenceInAges([82, 15, 6, 38, 35]));
   return newArray
     }   
 console.log(getEvenNumbers([2,4,5,6]));
-
+console.log("------------------------");
 
 
 function getEvenNumbers(numbersArray) {
@@ -418,7 +419,7 @@ let meetS = Math.floor(meetPoint*3600 - (meetH*3600+meetMin*60));
 }
 }
 console.log(race(820, 850, 550));
-
+console.log("------------------------");
 function elevatorDistance(array) {
   let sum = 0;
   for (let i = 0; i < array.length-1; i++) {
@@ -428,7 +429,7 @@ function elevatorDistance(array) {
 }
 
 console.log(elevatorDistance([6,1,6,1]));
-
+console.log("------------------------");
 function sequence(x) {
   let arr = [];
   for (let i = 0; i < x; i++) {
@@ -437,14 +438,14 @@ function sequence(x) {
   return arr.sort();
 }
 console.log(sequence(16));
-
+console.log("------------------------");
 function chuckPushUps(string) {
   string = string.replace(/[^0-9,]/g, ',');
   return string;
 }
 
 console.log(chuckPushUps('1 "Chuck" 10 "Stop that!" 11 "Your vest looks stupid" 100 101 110'));
-
+console.log("------------------------");
 
 function solution(number){ 
   let arr1 = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
@@ -461,7 +462,7 @@ function solution(number){
 
 console.log(solution(125));
 
-
+console.log("------------------------");
 
   function solutio(roman) {
       let arr1 = [900, 1000, 400, 500, 90, 100, 40, 50, 9, 10, 4, 5, 1];
@@ -479,9 +480,8 @@ console.log(solution(125));
       return suma+solutio(roman)
     } 
   
-  
  console.log(solutio('MDCLXVI'))
-
+ console.log("------------------------");
 
  let a1 = [121, 144, 19, 161, 19, 144, 19, 11];
  let a2 = [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19];
@@ -492,6 +492,7 @@ console.log(solution(125));
   }
   console.log(comp(a1, a2));
 
+  console.log("------------------------");
 
   function solve(s, k){
     while (k > 0){
@@ -580,7 +581,8 @@ console.log(solution(125));
         return s
      } 
      console.log(solve('abracadabra', 1));
-     
+
+     console.log("------------------------");
      
      function solve(s, k){
       const abc = "abcdefghijklmnopqrstuvwxyz"
@@ -590,11 +592,12 @@ console.log(solution(125));
           s = s.replace(abc[i], "")
           k -= 1
         }
-      }
-      
+      } 
       return s
     }
     console.log(solve('abracadabra', 1));
+
+    console.log("------------------------");
 
     function whatNote(string, fret) {
       const e = ["A", "A#", "B", "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#"];
@@ -602,3 +605,16 @@ console.log(solution(125));
     }
 
     console.log(whatNote("B", 4));
+
+    console.log("------------------------");
+    multiplicationTable = function(size) {
+      let arr1 =[];
+      for (let i = 1; i <=size; i++) {
+        let arr =[];
+            for (let j = 1; j <=size; j++) {  
+                   arr.push(i*j);
+                  }
+                    arr1.push(arr)
+             }
+    return arr1
+    }
